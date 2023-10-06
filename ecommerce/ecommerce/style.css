@@ -1,0 +1,254 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+h1 {
+  margin: 2rem 0 1rem 0;
+}
+
+nav {
+  color: white;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  padding: 0 5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.highlight-text {
+  color: #bc6c25;
+  text-decoration: underline;
+}
+
+.head1 {
+  color: white;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 700;
+}
+
+.hero-text {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.25rem; /* 36px */
+}
+
+.hero-text span {
+  color: #bc6c25;
+  text-decoration: underline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+i:hover {
+  color: #000;
+}
+
+/* Estilos para la sección "home" */
+.home {
+    background-image: url('./assets/img/clothesBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.hero-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Estilos para la sección "categorias" */
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.categories h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.categories p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.category-card {
+    width: 200px;
+    height: 200px;
+    background-image: url('./assets/img/clothesBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    overflow: hidden; /* Evita que el contenido se desborde cuando haces zoom */
+}
+
+.category-card:hover {
+    transform: scale(1.1); /* Hace zoom al 110% del tamaño original */
+}
+
+/* Estilos para la sección "products" */
+.products {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.products h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bc6c25;
+}
+
+.product-card {
+    width: 300px;
+    height: 300px;
+    background-image: url('./assets/img/clothesBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Agregamos una transición al transform */
+}
+
+.product-card:hover {
+    transform: scale(1.1); /* Hace zoom al 110% del tamaño original */
+}
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+
+/* Estilos para la sección "contact" */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #faedcd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bc6c25;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #bc6c25;
+    text-decoration: underline;
+}
+
+.contact a {
+    text-decoration: underline;
+    color: #bc6c25;
+    transition: all 0.3s ease-in;
+}
+
+.contact a:hover {
+    color: #000;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
